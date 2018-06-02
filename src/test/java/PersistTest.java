@@ -5,9 +5,37 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PersistTest {
-    @Test public void persistancetestFormNumber20() {
+    @Test public void persistancetestFormNumber0() {
+        int result = Persist.persistence(0);
+        assertEquals(0, result);
+    }
+    @Test public void persistancetestFormNumber425() {
         int result = Persist.persistence(425);
-
         assertEquals(2, result);
+    }
+
+    @Test public void persistancetestFormNumber10() {
+        int result = Persist.persistence(10);
+        assertEquals(1, result);
+    }
+    @Test public void persistancetestFormNumber1250() {
+        int result = Persist.persistence(1250);
+        assertEquals(1, result);
+    }
+    @Test public void persistancetestFormNumber3125() {
+        int result = Persist.persistence(3125);
+        assertEquals(2, result);
+    }
+    @Test public void persistancetestFormNumber3425() {
+        int result = Persist.persistence(3425);
+        assertEquals(2, result);
+    }
+    @Test public void persistancetestFormNumber1000() {
+        int result = Persist.persistence(1000);
+        assertEquals(1, result);
+    }
+    @Test public void persistancetestFormNumber4332() {
+        int result = Persist.persistence(4332);
+        assertEquals(3, result);
     }
 }
